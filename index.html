@@ -24,19 +24,18 @@
   <script>
     <!-- //$(document).ready(function() { -->
       $(function() {
-          //セレクタ：処理対象となるDOM要素を指定する記法 = $("pとかh1とか")
-          //メソッド：処理(.以下)
-          //メソッドチェーン：メソッドをつなげて書くこと
-          //id #~
-          //class .item
-          // > 直下の子要素
-          // 空白 それ以下の要素
-          // , 複数の要素
-          // + 隣接する要素
-      <!-- $("#sub").css('color', 'red'); -->
-      <!-- $("#main .item").css('color', 'red'); -->
-      <!-- $("p, .item").css('color', 'red'); -->
-      $(".item + .item").css('color', 'red');
+          //セレクタ.メソッド
+          //フィルタ
+          //:eq()
+          //:gt(), :lt()
+          //:even, :odd
+          //:contains()
+          //:first, :last
+      <!-- $("#sub > li:eq(2)").css('color', 'red'); -->
+      <!-- $("#sub > li:gt(1)").css('color', 'red'); -->
+      <!-- $("#sub > li:odd").css('color', 'red'); -->
+      $("#sub > li:contains('4')").css('color', 'red');
+
     });
   </script>
   </body>
