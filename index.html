@@ -6,14 +6,31 @@
 </head>
 <body>
   <p>jQueryの練習</p>
+  <ul id = "main">
+       <li>0</li>
+       <li class="item">1</li>
+       <li class="item">2</li>
+       <li>3
+          <ul id="sub">
+              <li>3-0</li>
+              <li>3-1</li>
+              <li class="item">3-2</li>
+              <li class="item">3-3</li>
+              <li>3-4</li>
+          </ul>
+      </li>
+   </ul>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
     <!-- //$(document).ready(function() { -->
       $(function() {
-        $('p').css('color', 'red').hide('slow');
-          //セレクタ：処理対象となるDOM要素を指定する記法
+        <!-- $("#sub").css('color', 'red'); -->
+        $(".item").css('color', 'red');
+          //セレクタ：処理対象となるDOM要素を指定する記法 = $("pとかh1とか")
           //メソッド：処理(.以下)
           //メソッドチェーン：メソッドをつなげて書くこと
+          //id #~
+          //class .item
     });
   </script>
   </body>
