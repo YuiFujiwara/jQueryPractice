@@ -24,13 +24,19 @@
   <script>
     <!-- //$(document).ready(function() { -->
       $(function() {
-        <!-- $("#sub").css('color', 'red'); -->
-        $(".item").css('color', 'red');
           //セレクタ：処理対象となるDOM要素を指定する記法 = $("pとかh1とか")
           //メソッド：処理(.以下)
           //メソッドチェーン：メソッドをつなげて書くこと
           //id #~
           //class .item
+          // > 直下の子要素
+          // 空白 それ以下の要素
+          // , 複数の要素
+          // + 隣接する要素
+      <!-- $("#sub").css('color', 'red'); -->
+      <!-- $("#main .item").css('color', 'red'); -->
+      <!-- $("p, .item").css('color', 'red'); -->
+      $(".item + .item").css('color', 'red');
     });
   </script>
   </body>
