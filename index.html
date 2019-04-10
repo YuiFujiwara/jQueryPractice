@@ -6,23 +6,17 @@
 </head>
 <body>
   <p>jQueryの練習</p>
-  <style>
-    .myStyle {
-      border:5px solid green;
-      font-size:48px;
-    }
-  </style>
+  <a href="https://google.com" data-sitename="google">google</a>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
       $(function() {
-          //セレクタ.メソッド
-          // .css  設定 取得
-      //$('p').css('color', 'red').css('background', 'blue');
-      //console.log($('p').css('color'));
-
-        // addClass removeClass
-        $('p').addClass('myStyle');
+          // attr
+          ///console.log($('a').attr('href'));
+          //$('a').attr('href','https://google.co.jp');
+          // data
+          console.log($('a').data('sitename'));
     });
   </script>
   </body>
