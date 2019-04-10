@@ -6,25 +6,23 @@
 </head>
 <body>
   <p>jQueryの練習</p>
-  <p><a href="https://google.com">Google</a></p>
-  <p><a href="https://yahoo.co.jp">Yahoo</a></p>
-  <p><a href="https://dotinstall.com">Dotinstall</a></p>
+  <style>
+    .myStyle {
+      border:5px solid green;
+      font-size:48px;
+    }
+  </style>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
       $(function() {
           //セレクタ.メソッド
-          // 属性セレクタ
-          // = 等しい
-          // != 等しくない
-          // *= 〇〇を含む
-          // ^= 先頭から始まる
-          // $= 終わりがそうである
-      <!-- $('a[href="https://google.com"]').css('background', 'red'); -->
-      <!-- $('a[href!="https://google.com"]').css('background', 'red'); -->
-      <!-- $('a[href*="dotinstall"]').css('background', 'red'); -->
-      $('a[href$="jp"]').css('background', 'red');
+          // .css  設定 取得
+      //$('p').css('color', 'red').css('background', 'blue');
+      //console.log($('p').css('color'));
 
+        // addClass removeClass
+        $('p').addClass('myStyle');
     });
   </script>
   </body>
