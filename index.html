@@ -6,32 +6,24 @@
 </head>
 <body>
   <p>jQueryの練習</p>
-  <ul id = "main">
-       <li>0</li>
-       <li class="item">1</li>
-       <li class="item">2</li>
-       <li>3
-          <ul id="sub">
-              <li>3-0</li>
-              <li>3-1</li>
-              <li class="item">3-2</li>
-              <li class="item">3-3</li>
-              <li>3-4</li>
-          </ul>
-      </li>
-   </ul>
+  <p><a href="https://google.com">Google</a></p>
+  <p><a href="https://yahoo.co.jp">Yahoo</a></p>
+  <p><a href="https://dotinstall.com">Dotinstall</a></p>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
-    <!-- //$(document).ready(function() { -->
       $(function() {
           //セレクタ.メソッド
-          //メソッドを使ったDOM要素の指定
-          // parent(), children()
-          // next(), prev()
-          // siblings() - 兄弟要素
-      <!-- $("#sub").children().css('color', 'red'); -->
-      <!-- $("#sub > li:eq(2)").prev().css('color', 'red'); -->
-      $("#sub > li:eq(2)").siblings().css('color', 'red');
+          // 属性セレクタ
+          // = 等しい
+          // != 等しくない
+          // *= 〇〇を含む
+          // ^= 先頭から始まる
+          // $= 終わりがそうである
+      <!-- $('a[href="https://google.com"]').css('background', 'red'); -->
+      <!-- $('a[href!="https://google.com"]').css('background', 'red'); -->
+      <!-- $('a[href*="dotinstall"]').css('background', 'red'); -->
+      $('a[href$="jp"]').css('background', 'red');
 
     });
   </script>
