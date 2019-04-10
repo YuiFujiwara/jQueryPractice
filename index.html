@@ -7,16 +7,19 @@
 <body>
   <p>jQueryの練習</p>
   <a href="https://google.com" data-sitename="google">google</a>
-
+  <input type="text" value="hello">
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
       $(function() {
-          // attr
-          ///console.log($('a').attr('href'));
-          //$('a').attr('href','https://google.co.jp');
-          // data
-          console.log($('a').data('sitename'));
+          // text
+          // html
+          // val
+          // remove, empty
+          // $('p').text('just changed');
+          //$('p').html('<a href="">click me!</a>');
+          //$('input').val('hello, again!');
+          $('p').remove();
     });
   </script>
   </body>
